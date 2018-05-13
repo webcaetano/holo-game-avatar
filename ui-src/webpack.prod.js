@@ -1,10 +1,11 @@
 var path = require('path');
 var webpackConfig = require('./webpack.base.js');
 var webpack = require("webpack");
+var CopyWebpackPlugin = require('copy-webpack-plugin');
 
 webpackConfig.entry = {
-	'app': './src/index.js',
-	'app.min': './src/index.js',
+	'game': './src/index.js',
+	'game.min': './src/index.js',
 }
 
 webpackConfig.plugins = webpackConfig.plugins.concat([
@@ -16,11 +17,14 @@ webpackConfig.plugins = webpackConfig.plugins.concat([
 	new webpack.DefinePlugin({
 	  __DEV__:false,
 	}),
+	new CopyWebpackPlugin([
+		{ from: './texture_sheets/*.{png,json}', to: './../ui' },
+	],{})
 ])
 
 webpackConfig.output = {
-	library:'app',
-	filename: 'build/[name].js',
+	library:'nice-little-butt',
+	filename: './../ui/[name].js',
 	sourceMapFilename: '[file].map',
 	umdNamedDefine: true,
 	devtoolModuleFilenameTemplate: "webpack:///[resource-path]", // string

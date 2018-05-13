@@ -3,3 +3,4 @@ ui-src/bower_components/
 ui-src/.tmp/
 ui-src/dist/
 .sass-cache/
+*.log
