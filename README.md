@@ -1,6 +1,6 @@
 # Holo game avatar
 
-Game demo made during Brazil Hackathon in May 2018.
+Game demo made during Holochain Brazil Hackathon in May 2018.
 Following the HoloWorld tutorial.
 
 And Holochain is used as a database.
