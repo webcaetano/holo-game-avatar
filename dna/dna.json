@@ -1,0 +1,44 @@
+{
+	"Version": 1,
+	"UUID": "171fe00a-5443-11e8-aa9d-f45c89cbd9dd",
+	"Name": "HoloWorld",
+	"Properties": {
+		"description": "provides an application template",
+		"language": "en"
+	},
+	"PropertiesSchemaFile": "properties_schema.json",
+	"RequiresVersion": 24,
+	"DHTConfig": {
+		"HashType": "sha2-256",
+		"NeighborhoodSize": 0
+	},
+	"Zomes": [
+		{
+			"Name": "readerWriter",
+			"Description": "read and write data",
+			"CodeFile": "readerWriter.js",
+			"RibosomeType": "js",
+			"BridgeFuncs": null,
+			"Config": null,
+			"Entries": [
+				{
+					"Name": "holoText",
+					"DataFormat": "string",
+					"Sharing": "public"
+				}
+			],
+			"Functions": [
+				{
+					"Name": "holoTextWrite",
+					"CallingType": "string",
+					"Exposure": "public"
+				},
+				{
+					"Name": "holoTextRead",
+					"CallingType": "string",
+					"Exposure": "public"
+				}
+			]
+		}
+	]
+}

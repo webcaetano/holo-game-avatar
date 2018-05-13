@@ -1,0 +1,248 @@
+  {
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "definitions": {},
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "properties": {
+      "skin": {
+        "$id": "/properties/skin",
+        "type": "object",
+        "properties": {
+          "colors": {
+            "$id": "/properties/skin/properties/colors",
+            "type": "array",
+            "items": {
+              "$id": "/properties/skin/properties/colors/items",
+              "type": "string",
+              "title": "The 0th Schema ",
+              "default": "",
+              "examples": [
+                "194",
+                "63",
+                "63"
+              ]
+            }
+          },
+          "style": {
+            "$id": "/properties/skin/properties/style",
+            "type": "integer",
+            "title": "The Style Schema ",
+            "default": 0,
+            "examples": [
+              0
+            ]
+          }
+        }
+      },
+      "shirt": {
+        "$id": "/properties/shirt",
+        "type": "object",
+        "properties": {
+          "colors": {
+            "$id": "/properties/shirt/properties/colors",
+            "type": "array",
+            "items": {
+              "$id": "/properties/shirt/properties/colors/items",
+              "type": "string",
+              "title": "The 0th Schema ",
+              "default": "",
+              "examples": [
+                "67",
+                "140",
+                "63"
+              ]
+            }
+          },
+          "style": {
+            "$id": "/properties/shirt/properties/style",
+            "type": "integer",
+            "title": "The Style Schema ",
+            "default": 0,
+            "examples": [
+              6
+            ]
+          }
+        }
+      },
+      "short": {
+        "$id": "/properties/short",
+        "type": "object",
+        "properties": {
+          "colors": {
+            "$id": "/properties/short/properties/colors",
+            "type": "array",
+            "items": {
+              "$id": "/properties/short/properties/colors/items",
+              "type": "string",
+              "title": "The 0th Schema ",
+              "default": "",
+              "examples": [
+                "140",
+                "67",
+                "63"
+              ]
+            }
+          },
+          "style": {
+            "$id": "/properties/short/properties/style",
+            "type": "integer",
+            "title": "The Style Schema ",
+            "default": 0,
+            "examples": [
+              1
+            ]
+          }
+        }
+      },
+      "socks": {
+        "$id": "/properties/socks",
+        "type": "object",
+        "properties": {
+          "colors": {
+            "$id": "/properties/socks/properties/colors",
+            "type": "array",
+            "items": {
+              "$id": "/properties/socks/properties/colors/items",
+              "type": "string",
+              "title": "The 0th Schema ",
+              "default": "",
+              "examples": [
+                "140",
+                "67",
+                "63"
+              ]
+            }
+          },
+          "style": {
+            "$id": "/properties/socks/properties/style",
+            "type": "integer",
+            "title": "The Style Schema ",
+            "default": 0,
+            "examples": [
+              3
+            ]
+          }
+        }
+      },
+      "shoes": {
+        "$id": "/properties/shoes",
+        "type": "object",
+        "properties": {
+          "colors": {
+            "$id": "/properties/shoes/properties/colors",
+            "type": "array",
+            "items": {
+              "$id": "/properties/shoes/properties/colors/items",
+              "type": "string",
+              "title": "The 0th Schema ",
+              "default": "",
+              "examples": [
+                "67",
+                "63",
+                "63"
+              ]
+            }
+          },
+          "style": {
+            "$id": "/properties/shoes/properties/style",
+            "type": "integer",
+            "title": "The Style Schema ",
+            "default": 0,
+            "examples": [
+              1
+            ]
+          }
+        }
+      },
+      "hair": {
+        "$id": "/properties/hair",
+        "type": "object",
+        "properties": {
+          "colors": {
+            "$id": "/properties/hair/properties/colors",
+            "type": "array",
+            "items": {
+              "$id": "/properties/hair/properties/colors/items",
+              "type": "string",
+              "title": "The 0th Schema ",
+              "default": "",
+              "examples": [
+                "67",
+                "63",
+                "63"
+              ]
+            }
+          },
+          "style": {
+            "$id": "/properties/hair/properties/style",
+            "type": "integer",
+            "title": "The Style Schema ",
+            "default": 0,
+            "examples": [
+              3
+            ]
+          }
+        }
+      },
+      "eyeBkg": {
+        "$id": "/properties/eyeBkg",
+        "type": "object",
+        "properties": {
+          "colors": {
+            "$id": "/properties/eyeBkg/properties/colors",
+            "type": "array",
+            "items": {
+              "$id": "/properties/eyeBkg/properties/colors/items",
+              "type": "string",
+              "title": "The 0th Schema ",
+              "default": "",
+              "examples": [
+                "63",
+                "63",
+                "63"
+              ]
+            }
+          },
+          "style": {
+            "$id": "/properties/eyeBkg/properties/style",
+            "type": "integer",
+            "title": "The Style Schema ",
+            "default": 0,
+            "examples": [
+              0
+            ]
+          }
+        }
+      },
+      "eye": {
+        "$id": "/properties/eye",
+        "type": "object",
+        "properties": {
+          "colors": {
+            "$id": "/properties/eye/properties/colors",
+            "type": "array",
+            "items": {
+              "$id": "/properties/eye/properties/colors/items",
+              "type": "string",
+              "title": "The 0th Schema ",
+              "default": "",
+              "examples": [
+                "96",
+                "63",
+                "63"
+              ]
+            }
+          },
+          "style": {
+            "$id": "/properties/eye/properties/style",
+            "type": "integer",
+            "title": "The Style Schema ",
+            "default": 0,
+            "examples": [
+              0
+            ]
+          }
+        }
+      }
+    }
+  }
