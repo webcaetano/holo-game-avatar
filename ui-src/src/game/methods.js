@@ -127,18 +127,40 @@ module.exports = function(){
 		scope.colorsBtns.refresh();
 	}
 
+	$("#saveButton").unbind('click');
 	$("#saveButton").click(function(){
-		var _message = scope.parts;
+		var _message = {
+			parts:scope.parts,
+			gender:scope.gender,
+		};
+
 		var message = JSON.stringify(_message)
-		// $.post('/fn/readerWriter/holoTextWrite',message,function(data){
-		// 	$('#hash').val(data);
-		// });
+		$.post('/fn/readerWriter/holoTextWrite',message,function(data){
+			$('#hash').val(data);
+		});
 	});
 
+	$("#loadButton").unbind('click');
 	$("#loadButton").click(function(){
-		// $.post('/fn/readerWriter/holoTextRead',$('#load').val(),function(_data){
-		// 	var data = $.parseJSON(_data);
-		// 	scope.load(data);
-		// });
+		$.post('/fn/readerWriter/holoTextRead',$('#load').val(),function(_data){
+			var data = $.parseJSON(_data);
+			scope.gender = data.gender;
+			// console.log(data)
+			// scope.load(data.parts);
+			game.state.restart(true,false,scope.gender,data.parts);
+		});
 	});
+
+	// QmTBLCgaw64CQDRPoyirb85GP6PBGknY3xJpU7j5hPU7iH
+	// QmZDvUmKmC6v7WebZpyDKFXEU1QniW19Dmj4j7EHD3nAuc
+	// test
+	// setTimeout(function(){
+	// 	var _message = scope.parts;
+	// 	var message = JSON.stringify(_message)
+	// 	$.post('/fn/readerWriter/holoTextWrite',message,function(data){
+	// 		console.log(data)
+	// 		$('#hash').val(data);
+	// 		$('#load').val(data);
+	// 	});
+	// },500)
 }

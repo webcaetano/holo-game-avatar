@@ -1,6 +1,7 @@
 {
   "name": "webpack-boilerplate",
   "version": "0.0.0",
+  "proxy": "http://localhost:4141",
   "dependencies": {
     "phaser": "2.6.2",
     "lodash": "~4.13.1",
@@ -21,6 +22,6 @@
     "tojson-loader": "^1.0.4",
     "raw-loader": "^0.5.1",
     "webpack": "3.11.0",
-    "webpack-dev-server": "^2.4.2"
+    "webpack-dev-server": "2.11.1"
   }
 }

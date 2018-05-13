@@ -7,8 +7,9 @@ var {scope,game,craft} = require('./main');
 module.exports = function(){
 	var state = {};
 
-	state.init = function(gender='female'){
+	state.init = function(gender='female',_default=null){
 		scope = main.scope = require('./scope')(gender);
+		scope._default = _default;
 	}
 
 	state.preload = function(){
@@ -33,7 +34,12 @@ module.exports = function(){
 
 		scope.setPart('hair');
 
-		scope.load();
+		if(scope._default){
+			scope.load(scope._default);
+			scope._default = null;
+		} else {
+			scope.load();
+		}
 	}
 
 	return state;
