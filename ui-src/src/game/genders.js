@@ -14,11 +14,11 @@ module.exports = function(){
 
 	_.each([
 		{
-			name:'Male',
+			name:'Type 1',
 			x:-gap,
 		},
 		{
-			name:'Female',
+			name:'Type 2',
 			x:gap,
 		}
 	],function(val){
